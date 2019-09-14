@@ -1,0 +1,32 @@
+package com.javarush.task.task04.task0432;
+
+
+
+/* 
+Хорошего много не бывает
+*/
+
+import java.io.*;
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+        String q = bufferedReader.readLine();
+        String p = bufferedReader.readLine();
+
+        int a = Integer.parseInt(p);
+        int b = 0;
+
+        while (b < a) {
+
+            System.out.println(q);
+            a--;
+        }
+
+        //напишите тут ваш код
+
+    }
+}
