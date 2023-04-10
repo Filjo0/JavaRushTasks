@@ -7,10 +7,9 @@ package com.javarush.task.task05.task0504;
 
 public class Solution {
     public static void main(String[] args) {
-     Cat cat1 = new Cat("A", 1,2,3);
-     Cat cat2 = new Cat("B", 2,3,4);
-     Cat cat3 = new Cat("C", 3,4,5);
-     //напишите тут ваш код
+        Cat cat1 = new Cat("A", 1, 2, 3);
+        Cat cat2 = new Cat("B", 2, 3, 4);
+        Cat cat3 = new Cat("C", 3, 4, 5);
     }
 
     public static class Cat {

@@ -13,8 +13,8 @@ public class Solution {
         int a = Integer.parseInt(br.readLine());
         int b = Integer.parseInt(br.readLine());
         System.out.println(NOD(a, b));
-        if(a <= 0) throw new Exception();
-        if(b <= 0) throw new Exception();
+        if (a <= 0) throw new Exception();
+        if (b <= 0) throw new Exception();
     }
 
     public static int NOD(int a, int b) {

@@ -23,6 +23,5 @@ public class Solution {
             }
         }
         System.out.println(sss);  //печатаем
-        //напишите тут ваш код
     }
 }

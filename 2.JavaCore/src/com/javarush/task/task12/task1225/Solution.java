@@ -30,8 +30,7 @@ public class Solution {
         }
         if (o instanceof Cow) {
             return "Корова";
-        }//напишите тут ваш код
-        else {
+        } else {
             return "Животное";
         }
     }

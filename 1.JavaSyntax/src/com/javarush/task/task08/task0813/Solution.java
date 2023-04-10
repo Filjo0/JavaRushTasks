@@ -9,7 +9,6 @@ import java.util.Set;
 
 public class Solution {
     public static Set<String> createSet() {
-        //напишите тут ваш код
         Set<String> set = new HashSet<>();
         for (int i = 0; i < 20; i++) {
             set.add("Л" + i);

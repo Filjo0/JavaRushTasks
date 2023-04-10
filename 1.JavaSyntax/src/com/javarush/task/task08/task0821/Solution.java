@@ -19,8 +19,8 @@ public class Solution {
             map.put(i + " ", i + "");
         }
         map.put(1 + " ", 1 + " ");
+
         return map;
-        //напишите тут ваш код
     }
 
     public static void printPeopleList(Map<String, String> map) {

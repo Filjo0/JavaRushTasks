@@ -4,7 +4,10 @@ package com.javarush.task.task04.task0419;
 Максимум четырех чисел
 */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -30,10 +33,9 @@ public class Solution {
         } else if (o > l && o > m && o > n) {
             System.out.println(o);
         } else if (m == n && m == l && m == o) {
-            System.out.println(m);    //напишите тут ваш код
-        }
-        else {
-            System.out.println(Math.max(Math.max(l,m),Math.max(n,o)));
+            System.out.println(m);
+        } else {
+            System.out.println(Math.max(Math.max(l, m), Math.max(n, o)));
         }
     }
 }

@@ -5,6 +5,9 @@ package com.javarush.task.task13.task1307;
 */
 
 public class Solution {
+    {
+    }
+
     public static void main(String[] args) throws Exception {
     }
 
@@ -12,14 +15,11 @@ public class Solution {
         SimpleObject<T> getInstance();
     }
 
-    class StringObject implements SimpleObject<String> {
+    static class StringObject implements SimpleObject<String> {
 
         @Override
         public SimpleObject getInstance() {
             return null;
         }
     } //допишите здесь ваш код
-
-    {
-    }
 }

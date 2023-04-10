@@ -11,7 +11,7 @@ public class Rectangle {
     int width;
     int height;
 
-    public Rectangle (int top, int left, int width, int height) {
+    public Rectangle(int top, int left, int width, int height) {
         this.top = top;
         this.left = left;
         this.width = width;
@@ -23,7 +23,8 @@ public class Rectangle {
         this.left = left;
         this.width = 0;
     }
-    public Rectangle (int top, int left, int width) {
+
+    public Rectangle(int top, int left, int width) {
         this.top = top;
         this.left = left;
         this.width = width;
@@ -35,9 +36,8 @@ public class Rectangle {
         this.top = top;
         this.width = width;
         this.height = height;
-    }//напишите тут ваш код
+    }
 
     public static void main(String[] args) {
-
     }
 }

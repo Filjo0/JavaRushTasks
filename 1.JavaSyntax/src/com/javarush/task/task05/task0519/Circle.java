@@ -12,20 +12,20 @@ public class Circle {
     private int width = 0;
     private int color = 0;
 
-    public Circle (int centerX, int centerY, int radius){
+    public Circle(int centerX, int centerY, int radius) {
         this.centerX = centerX;
         this.centerY = centerY;
         this.radius = radius;
     }
 
-    public Circle(int centerX, int centerY, int radius, int width){
+    public Circle(int centerX, int centerY, int radius, int width) {
         this.centerX = centerX;
         this.centerY = centerY;
         this.radius = radius;
         this.width = width;
     }
 
-    public Circle(int centerX, int centerY, int radius, int width, int color){
+    public Circle(int centerX, int centerY, int radius, int width, int color) {
         this.centerX = centerX;
         this.centerY = centerY;
         this.radius = radius;
@@ -37,4 +37,3 @@ public class Circle {
 
     }
 }
-//напишите тут ваш код

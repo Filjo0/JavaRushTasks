@@ -2,8 +2,6 @@ package com.javarush.task.task08.task0830;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /* 
 Задача по алгоритмам

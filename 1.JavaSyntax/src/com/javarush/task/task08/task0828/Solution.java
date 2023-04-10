@@ -3,7 +3,8 @@ package com.javarush.task.task08.task0828;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /* 
 Номер месяца
@@ -30,11 +31,9 @@ public class Solution {
         for (Map.Entry<String, String> pair : map.entrySet()) {
             String key = pair.getKey();
             String value = pair.getValue();
-            if (key.toUpperCase().equals(month.toUpperCase())) {
+            if (key.equalsIgnoreCase(month)) {
                 System.out.println(value);
             }
         }
-
-        //напишите тут ваш код
     }
 }

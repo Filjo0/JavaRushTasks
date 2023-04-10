@@ -15,6 +15,6 @@ public class Solution {
     }
 
     public static void divideByZero() {
-        System.out.println(1/0);
+        System.out.println(1 / 0);
     }
 }

@@ -39,14 +39,14 @@ public class Solution {
         abstract Swimmable getCurrentAnimal();
     }
 
-    static class Orca extends OceanAnimal implements Swimmable{
+    static class Orca extends OceanAnimal implements Swimmable {
         @Override
         Swimmable getCurrentAnimal() {
             return this;
         }
     }
 
-    static class Whale extends OceanAnimal implements Swimmable{
+    static class Whale extends OceanAnimal implements Swimmable {
 
         @Override
         Swimmable getCurrentAnimal() {
@@ -54,7 +54,7 @@ public class Solution {
         }
     }
 
-    static class Otter implements Swimmable, Walkable{
+    static class Otter implements Swimmable, Walkable {
 
         @Override
         public void walk() {

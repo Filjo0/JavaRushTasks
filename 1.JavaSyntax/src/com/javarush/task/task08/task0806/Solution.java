@@ -21,12 +21,10 @@ public class Solution {
         map.put("Hugs", 111111111111L);
         map.put("Comp", (double) 123);
 
-        //напишите тут ваш код
         for (Map.Entry<String, Object> pair : map.entrySet()) {
             String key = pair.getKey();
             Object value = pair.getValue();
             System.out.println(key + " - " + value);
-
         }
     }
 }

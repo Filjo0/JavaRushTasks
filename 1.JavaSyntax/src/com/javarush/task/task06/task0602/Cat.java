@@ -5,27 +5,25 @@ package com.javarush.task.task06.task0602;
 */
 
 public class Cat {
-    public static void main(String[] args) {
-    }
-        protected void finalize() throws Throwable {
-
-        }
     {
         System.out.println("A Cat was destroyed");
 
-    } //напишите тут ваш код
+    }
 
-}
+    public static void main(String[] args) {
+    }
 
-class Dog {
     protected void finalize() throws Throwable {
 
     }
 
+}
+
+class Dog {
     {
         System.out.println("A Dog was destroyed");
     }
 
-
+    protected void finalize() throws Throwable {
+    }
 }
-    //напишите тут ваш код

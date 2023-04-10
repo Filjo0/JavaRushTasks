@@ -9,6 +9,6 @@ public class Solution {
         System.out.println("8888888888");
         for (int a = 1; a < 11; a++) {
             System.out.println("8");
-            }
         }
-    }//напишите тут ваш код
+    }
+}

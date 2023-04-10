@@ -1,6 +1,6 @@
 package com.javarush.task.task13.task1328;
 
-public abstract class AbstractRobot implements Attackable, Defensable{
+public abstract class AbstractRobot implements Attackable, Defensable {
     private static int hitCount;
     protected String name;
 

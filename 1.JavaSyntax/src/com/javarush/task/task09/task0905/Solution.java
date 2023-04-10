@@ -13,7 +13,6 @@ public class Solution {
         StackTraceElement[] stackTraceElement = Thread.currentThread().getStackTrace();
         System.out.println(Thread.currentThread().getStackTrace().length);
         return Thread.currentThread().getStackTrace().length;
-        //напишите тут ваш код
     }
 }
 

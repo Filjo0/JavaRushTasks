@@ -24,8 +24,8 @@ public class Solution {
         list.add(c);
         list.add(d);
         list.add(e);
+
         return list;
-        //напишите тут ваш код
     }
 
     public static void printList(ArrayList<int[]> list) {

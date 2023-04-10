@@ -22,4 +22,4 @@ public class Solution {
         if ((month >= 1 & month <= 2) || month == 12)
             System.out.println("зима");
     }
-    }
+}

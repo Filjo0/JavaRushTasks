@@ -1,6 +1,9 @@
 package com.javarush.task.task09.task0927;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /* 
 Десять котов
@@ -36,17 +39,13 @@ public class Solution {
         map.put("I", cat9);
         map.put("J", cat10);
 
-
-            //напишите тут ваш код
-
         return map;
     }
 
     public static Set<Cat> convertMapToSet(Map<String, Cat> map) {
-        Set<Cat> set = new HashSet<>();
-        set.addAll(map.values());
+        Set<Cat> set = new HashSet<>(map.values());
+
         return set;
-        //напишите тут ваш код
     }
 
     public static void printCatSet(Set<Cat> set) {
@@ -56,7 +55,7 @@ public class Solution {
     }
 
     public static class Cat {
-        private String name;
+        private final String name;
 
         public Cat(String name) {
             this.name = name;
@@ -66,6 +65,4 @@ public class Solution {
             return "Cat " + this.name;
         }
     }
-
-
 }

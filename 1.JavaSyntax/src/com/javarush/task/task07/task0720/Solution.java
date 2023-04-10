@@ -28,7 +28,7 @@ public class Solution {
             list.remove(a);
             list.add(list.size(), a);
         }
-        for (int k = 0; k < list.size(); k++){
+        for (int k = 0; k < list.size(); k++) {
             System.out.println(list.get(k));
         }
     }

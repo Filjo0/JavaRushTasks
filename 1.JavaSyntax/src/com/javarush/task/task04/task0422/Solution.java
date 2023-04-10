@@ -4,7 +4,10 @@ package com.javarush.task.task04.task0422;
 18+
 */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -15,14 +18,11 @@ public class Solution {
         String name = bufferedReader.readLine();
         String age = bufferedReader.readLine();//
         int a = Integer.parseInt(age);
-        if (a > 0){
-            if (a < 18){
+        if (a > 0) {
+            if (a < 18) {
                 System.out.print("Подрасти еще");
             }
             System.out.print("");
         }
-
-
-        // напишите тут ваш код
     }
 }

@@ -15,8 +15,6 @@ public class Solution {
         Dog luDog = new Dog("Lu", 1, 2);
         Dog tDog = new Dog("T", 1, 2);
         Dog motDog = new Dog("mot", 1, 2);
-
-        //напишите тут ваш код
     }
 
     public static class Mouse {
@@ -48,12 +46,10 @@ public class Solution {
         int height;
         int tail;
 
-        public Dog (String name, int height, int tail) {
+        public Dog(String name, int height, int tail) {
             this.name = name;
             this.height = height;
             this.tail = tail;
         }
     }
 }
-
-    //напишите тут ваш код

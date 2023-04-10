@@ -7,8 +7,8 @@ Food
 public class Solution {
     public static void main(String[] args) {
         Food food = new Food();
-        Selectable selectable = new Food();
-        Food newFood = (Food) selectable;
+        Food selectable = new Food();
+        Food newFood = selectable;
 
         foodMethods(food);
         selectableMethods(selectable);
@@ -29,7 +29,7 @@ public class Solution {
         void onSelect();
     }
 
-    static class Food implements Selectable{
+    static class Food implements Selectable {
         public void onEat() {
             System.out.println("The food was eaten");
         }

@@ -1,6 +1,7 @@
 package com.javarush.task.task08.task0824;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /* 
 Собираем семейство
@@ -22,9 +23,6 @@ public class Solution {
         for (Human h : humans) {
             System.out.println(h);
         }
-
-
-        //напишите тут ваш код
     }
 
     public static class Human {
@@ -48,21 +46,21 @@ public class Solution {
         }
 
         public String toString() {
-            String text = "";
-            text += "Имя: " + this.name;
-            text += ", пол: " + (this.sex ? "мужской" : "женский");
-            text += ", возраст: " + this.age;
+            StringBuilder text = new StringBuilder();
+            text.append("Имя: ").append(this.name);
+            text.append(", пол: ").append(this.sex ? "мужской" : "женский");
+            text.append(", возраст: ").append(this.age);
 
             int childCount = this.children.size();
             if (childCount > 0) {
-                text += ", дети: " + this.children.get(0).name;
+                text.append(", дети: ").append(this.children.get(0).name);
 
                 for (int i = 1; i < childCount; i++) {
                     Human child = this.children.get(i);
-                    text += ", " + child.name;
+                    text.append(", ").append(child.name);
                 }
             }
-            return text;
+            return text.toString();
         }
     }
 }

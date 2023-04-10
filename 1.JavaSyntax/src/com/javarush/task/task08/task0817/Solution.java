@@ -1,6 +1,8 @@
 package com.javarush.task.task08.task0817;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /* 
 Нам повторы не нужны
@@ -10,13 +12,10 @@ public class Solution {
     public static Map<String, String> createMap() {
         Map<String, String> map = new HashMap<>();
         for (int i = 0; i < 10; i++) {
-            map.put(i + " ", i + "");
+            map.put(i + " ", String.valueOf(i));
         }
         return map;
     }
-
-    //напишите тут ваш код
-
 
     public static void removeTheFirstNameDuplicates(Map<String, String> map) {
         HashMap<String, String> copy = new HashMap<String, String>(map); // создаём копию массива

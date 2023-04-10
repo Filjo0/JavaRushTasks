@@ -11,22 +11,17 @@ import java.util.List;
 public class Solution {
     public static List getListForGet() {
         return new ArrayList();
-        //напишите тут ваш код
-
     }
 
     public static List getListForSet() {
-        //напишите тут ваш код
         return new ArrayList();
     }
 
     public static List getListForAddOrInsert() {
-        //напишите тут ваш код
         return new LinkedList();
     }
 
     public static List getListForRemove() {
-        //напишите тут ваш код
         return new LinkedList();
     }
 

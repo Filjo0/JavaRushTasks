@@ -8,6 +8,7 @@ public class Solution {
     public static void main(String[] args) {
 
     }
+
     public interface CanRun {
         public void run();
     }
@@ -15,7 +16,7 @@ public class Solution {
     public interface CanSwim {
         public void swim();
     }
-    public abstract class Human implements CanRun, CanSwim {
+
+    public abstract static class Human implements CanRun, CanSwim {
     }
-    //add public interfaces and a public class here - добавь public интерфейсы и public класс тут
 }

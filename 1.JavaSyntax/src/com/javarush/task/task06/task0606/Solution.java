@@ -24,9 +24,8 @@ public class Solution {
                 odd++;
             }
 
-                number = number / 10;
-            }
-                System.out.println("Even: " + even + " Odd: " + odd);
-                //напишите тут ваш код
-            }
+            number = number / 10;
         }
+        System.out.println("Even: " + even + " Odd: " + odd);
+    }
+}

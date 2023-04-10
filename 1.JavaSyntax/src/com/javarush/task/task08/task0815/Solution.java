@@ -9,13 +9,11 @@ import java.util.Map;
 
 public class Solution {
     public static Map<String, String> createMap() {
-        //напишите тут ваш код
         Map<String, String> map = new HashMap<>();
         for (int i = 0; i < 10; i++) {
             map.put("Surname" + i, "Name" + i);
         }
         return map;
-
     }
 
     public static int getCountTheSameFirstName(Map<String, String> map, String name) {
@@ -25,12 +23,9 @@ public class Solution {
             if (s.equals(name)) num++;
         }
         return num;
-        //напишите тут ваш код
-
     }
 
     public static int getCountTheSameLastName(Map<String, String> map, String lastName) {
-        //напишите тут ваш код
         int num = 0;
         for (String s : map.keySet()) {
             if (s.equals(lastName)) num++;

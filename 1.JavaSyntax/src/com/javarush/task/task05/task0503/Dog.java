@@ -9,9 +9,13 @@ public class Dog {
     String name;
     int age;
 
+    public static void main(String[] args) {
+
+    }
+
     public String getName() {
 
-        return name;//напишите тут ваш код
+        return name;
     }
 
     public void setName(String name) {
@@ -19,14 +23,10 @@ public class Dog {
     }
 
     public int getAge() {
-        return age;//напишите тут ваш код
+        return age;
     }
 
-    public void setAge(int age){
+    public void setAge(int age) {
         this.age = age;
-    }
-
-    public static void main(String[] args) {
-
     }
 }

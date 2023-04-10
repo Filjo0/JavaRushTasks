@@ -4,7 +4,10 @@ package com.javarush.task.task04.task0417;
 Существует ли пара?
 */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -13,11 +16,11 @@ public class Solution {
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
         String p = bufferedReader.readLine();
-        int m = Integer.parseInt(p);    //напишите тут ваш код
+        int m = Integer.parseInt(p);
         String q = bufferedReader.readLine();
-        int n = Integer.parseInt(q);    //напишите тут ваш код
+        int n = Integer.parseInt(q);
         String r = bufferedReader.readLine();
-        int o = Integer.parseInt(r);    //напишите тут ваш код // напишите тут ваш код
+        int o = Integer.parseInt(r);
 
         if (m == n && n == o) {
             System.out.println(m + " " + n + " " + o);
@@ -25,7 +28,7 @@ public class Solution {
             System.out.println(m + " " + o);
         } else if (n == o) {
             System.out.println(n + " " + o);
-        } else if (m == n && m != o) {
+        } else if (m == n) {
             System.out.println(m + " " + n);
         }
     }

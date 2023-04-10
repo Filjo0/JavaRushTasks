@@ -11,9 +11,10 @@ public class Solution {
         Integer b = 2;
         print(b);
     }
-    public static void print(int a){
+
+    public static void print(int a) {
     }
-    public static void print(Integer b){
+
+    public static void print(Integer b) {
     }
-    //Напишите тут ваши методы
 }

@@ -17,7 +17,7 @@ public class Solution {
         int d = Integer.parseInt(reader.readLine());
         int e = Integer.parseInt(reader.readLine());
 
-        int minimum = min(a,b,c,d,e);
+        int minimum = min(a, b, c, d, e);
 
         System.out.println("Minimum = " + minimum);
     }
@@ -26,17 +26,13 @@ public class Solution {
     public static int min(int a, int b, int c, int d, int e) {
         if (a <= b && a <= c && a <= d && a <= e) {
             return a;
-        }
-        else if (b <= a && b <= c && b <= d && b <= e) {
+        } else if (b <= a && b <= c && b <= d && b <= e) {
             return b;
-        }
-        else if (c <= a && c <= b && c <= d && c <= e) {
+        } else if (c <= a && c <= b && c <= d && c <= e) {
             return c;
-        }
-        else if (d <= a && d <= b && d <= c && d <= e) {
+        } else if (d <= a && d <= b && d <= c && d <= e) {
             return d;
-        }
-        else
+        } else
             return e;
-        }
     }
+}

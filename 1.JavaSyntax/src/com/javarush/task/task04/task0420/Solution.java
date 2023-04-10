@@ -4,7 +4,10 @@ package com.javarush.task.task04.task0420;
 Сортировка трех чисел
 */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -20,20 +23,15 @@ public class Solution {
         int c = Integer.parseInt(r);
         if (a <= b && b <= c) {
             System.out.println(c + " " + b + " " + a);
-        }
-        else if (a <= c && c <= b) {
+        } else if (a <= c && c <= b) {
             System.out.println(b + " " + c + " " + a);
-        }
-        else if (b <= a && a <= c){
+        } else if (b <= a && a <= c) {
             System.out.println(c + " " + a + " " + b);
-        }
-        else if (b <= c){
+        } else if (b <= c) {
             System.out.println(a + " " + c + " " + b);
-        }
-        else if (a <= b) {
+        } else if (a <= b) {
             System.out.println(b + " " + a + " " + c);
-        }
-        else {
+        } else {
             System.out.println(a + " " + b + " " + c);
         }
     }

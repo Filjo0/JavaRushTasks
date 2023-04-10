@@ -6,9 +6,6 @@ package com.javarush.task.task09.task0907;
 
 public class Solution {
     public static void main(String[] args) {
-
-        //напишите тут ваш код
-
         try {
             System.out.println("Before method1 calling.");
             int a = 1 / 0;
@@ -19,7 +16,6 @@ public class Solution {
             System.out.println("Division by zero. Exception has been caught.");
         } catch (Exception e) {
             System.out.println("Any other errors. Exception has been caught.");
-            //напишите тут ваш код
         }
     }
 }

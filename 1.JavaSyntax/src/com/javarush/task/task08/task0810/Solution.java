@@ -1,7 +1,6 @@
 package com.javarush.task.task08.task0810;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -27,9 +26,7 @@ public class Solution {
         long start = System.currentTimeMillis();
         get10000(list);
         long end = System.currentTimeMillis();
-        long time = end - start;
-        return time;// напишите тут ваш код
-
+        return end - start;
     }
 
     public static void get10000(List list) {

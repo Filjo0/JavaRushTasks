@@ -59,13 +59,12 @@ public class Solution {
             if (mother == null && father == null) {
                 return "The cat's name is " + name + ", no mother" + ", no father";
             }
-            if (mother == null && father != null) {
+            if (mother == null) {
                 return "The cat's name is " + name + ", no mother" + ", father is " + father.name;
             }
-            if (father == null && mother != null) {
-                return "The cat's name is " + name + ", mother is " + mother.name + ", no father" ;
-            }
-            else {
+            if (father == null) {
+                return "The cat's name is " + name + ", mother is " + mother.name + ", no father";
+            } else {
                 return "The cat's name is " + name + ", mother is " + mother.name + ", father is " + father.name;
             }
         }

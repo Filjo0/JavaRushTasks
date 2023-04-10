@@ -1,7 +1,6 @@
 package com.javarush.task.task08.task0809;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -16,13 +15,10 @@ public class Solution {
     }
 
     public static long getInsertTimeInMs(List list) {
-        // напишите тут ваш код
         long StartTime = System.currentTimeMillis();
         insert10000(list);
         long EndTime = System.currentTimeMillis();
-        long Time = EndTime - StartTime;
-        return Time;
-        // напишите тут ваш код
+        return EndTime - StartTime;
 
     }
 

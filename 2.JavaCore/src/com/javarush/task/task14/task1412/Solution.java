@@ -6,8 +6,8 @@ package com.javarush.task.task14.task1412;
 
 public class Solution {
     public static void main(String[] args) {
-        Object obj = new Circle();
-        Movable movable = (Movable) obj;
+        Movable obj = new Circle();
+        Movable movable = obj;
         Drawable drawable = new Rectangle();
 
         printMainInfo(drawable);
@@ -15,18 +15,20 @@ public class Solution {
     }
 
     public static void printMainInfo(Object object) {
-       if (object instanceof Drawable) {
-           ((Drawable) object).draw();
-       }
-       else if (object instanceof Movable) {
-           ((Movable) object).move();
-       }
-        //напишите тут ваш код
+        if (object instanceof Drawable) {
+            ((Drawable) object).draw();
+        } else if (object instanceof Movable) {
+            ((Movable) object).move();
+        }
     }
 
     static interface Movable {
 
         void move();
+    }
+
+    static interface Drawable {
+        void draw();
     }
 
     static class Circle implements Movable {
@@ -39,10 +41,6 @@ public class Solution {
             System.out.println("Can be moved");
         }
 
-    }
-
-    static interface Drawable {
-        void draw();
     }
 
     static class Rectangle implements Drawable {

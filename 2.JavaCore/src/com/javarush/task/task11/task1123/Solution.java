@@ -12,20 +12,19 @@ public class Solution {
 
     public static Pair<Integer, Integer> getMinimumAndMaximum(int[] inputArray) {
         if (inputArray == null || inputArray.length == 0) {
-            return new Pair<Integer, Integer>(null, null);
+            return new Pair<>(null, null);
         }
         int min = 0;
         int max = 0;
 
-        for (int i = 1; i < inputArray.length; i++){
+        for (int i = 1; i < inputArray.length; i++) {
             if (inputArray[i] < min) {
                 min = inputArray[i];
-            }
-            else if (inputArray[i] > max) {
+            } else if (inputArray[i] > max) {
                 max = inputArray[i];
             }
         }
-        return new Pair<Integer, Integer>(min, max);
+        return new Pair<>(min, max);
     }
 
     public static class Pair<X, Y> {

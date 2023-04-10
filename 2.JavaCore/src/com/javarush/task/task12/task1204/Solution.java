@@ -14,20 +14,18 @@ public class Solution {
     }
 
     public static void printObjectType(Object o) {
-        if (o instanceof Cat){
+        if (o instanceof Cat) {
             System.out.println("Кошка");
         }
-        if (o instanceof Dog){
+        if (o instanceof Dog) {
             System.out.println("Собака");
         }
-        if (o instanceof Lamp){
+        if (o instanceof Lamp) {
             System.out.println("Лампа");
         }
-        if (o instanceof Bird){
+        if (o instanceof Bird) {
             System.out.println("Птица");
         }
-
-        //Напишите тут ваше решение
     }
 
     public static class Cat {

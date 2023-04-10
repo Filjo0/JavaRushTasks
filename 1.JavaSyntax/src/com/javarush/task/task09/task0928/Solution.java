@@ -1,6 +1,8 @@
 package com.javarush.task.task09.task0928;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 /* 
 Код не компилится…
@@ -17,8 +19,7 @@ public class Solution {
         OutputStream fileOutputStream = getOutputStream(destinationFileName);
 
         int count = 0;
-        while (fileInputStream.available() > 0)
-        {
+        while (fileInputStream.available() > 0) {
             int data = fileInputStream.read();
             fileOutputStream.write(data);
             count++;
@@ -31,10 +32,10 @@ public class Solution {
     }
 
     public static InputStream getInputStream(String fileName) throws IOException {
-        return new FileInputStream(fileName);
+        return Files.newInputStream(Paths.get(fileName));
     }
 
     public static OutputStream getOutputStream(String fileName) throws IOException {
-        return new FileOutputStream(fileName);
+        return Files.newOutputStream(Paths.get(fileName));
     }
 }

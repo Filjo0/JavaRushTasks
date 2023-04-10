@@ -20,7 +20,7 @@ public class Solution {
         int a = 0;
         while (true) {
             String p = bufferedReader.readLine();
-            if (p.equals("сумма")){
+            if (p.equals("сумма")) {
                 break;
             }
             int number = Integer.parseInt(p);
@@ -28,7 +28,5 @@ public class Solution {
 
         }
         System.out.println(a);
-
-        //напишите тут ваш код
     }
 }

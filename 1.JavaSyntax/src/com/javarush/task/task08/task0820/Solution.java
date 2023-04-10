@@ -1,9 +1,6 @@
 package com.javarush.task.task08.task0820;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 
 /* 
@@ -29,8 +26,6 @@ public class Solution {
         result.add(new Cat());
         result.add(new Cat());
 
-        //напишите тут ваш код
-
         return result;
     }
 
@@ -39,7 +34,7 @@ public class Solution {
         result.add(new Dog());
         result.add(new Dog());
         result.add(new Dog());
-        //напишите тут ваш код
+
         return result;
     }
 
@@ -47,18 +42,17 @@ public class Solution {
         Set<Object> pets = new HashSet<>();
         pets.addAll(cats);
         pets.addAll(dogs);
+
         return pets;
-        //напишите тут ваш код
     }
 
     public static void removeCats(Set<Object> pets, Set<Cat> cats) {
         pets.removeAll(cats);
     }
-    //напишите тут ваш код
 
     public static void printPets(Set<Object> pets) {
         for (Object pet : pets) {
-            System.out.println(pet);    //напишите тут ваш код
+            System.out.println(pet);
         }
     }
 
@@ -69,5 +63,4 @@ public class Solution {
     public static class Dog {
 
     }
-    //напишите тут ваш код
 }

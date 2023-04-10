@@ -5,6 +5,10 @@ package com.javarush.task.task12.task1226;
 */
 
 public class Solution {
+    public static void main(String[] args) {
+
+    }
+
     public interface CanFly {
         void fly();
     }
@@ -17,11 +21,7 @@ public class Solution {
         void run();
     }
 
-    public static void main(String[] args) {
-
-    }
-
-    public class Cat implements CanClimb, CanRun {
+    public static class Cat implements CanClimb, CanRun {
 
         @Override
         public void climb() {
@@ -34,17 +34,17 @@ public class Solution {
         }
     }
 
-    public class Dog implements CanRun {
+    public static class Dog implements CanRun {
         @Override
         public void run() {
 
         }
     }
 
-    public class Tiger extends Cat {
+    public static class Tiger extends Cat {
     }
 
-    public class Duck implements CanFly, CanRun {
+    public static class Duck implements CanFly, CanRun {
         @Override
         public void fly() {
 

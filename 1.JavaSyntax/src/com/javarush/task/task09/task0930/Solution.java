@@ -32,13 +32,12 @@ public class Solution {
         for (int i = array.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (isNumber(array[i]) && isNumber(array[j])) {
-                    if (Integer.valueOf(array[i]) > Integer.valueOf(array[j])) {
+                    if (Integer.parseInt(array[i]) > Integer.valueOf(array[j])) {
                         String tmp = array[i];
                         array[i] = array[j];
                         array[j] = tmp;
                     }
-                }
-                else if (!isNumber(array[i]) && !isNumber(array[j])) {
+                } else if (!isNumber(array[i]) && !isNumber(array[j])) {
                     if (!isGreaterThan(array[i], array[j])) {
                         String tmp = array[i];
                         array[i] = array[j];
@@ -48,6 +47,7 @@ public class Solution {
             }
         }
     }
+
     // Метод для сравнения строк: 'а' больше чем 'b'
     public static boolean isGreaterThan(String a, String b) {
         return a.compareTo(b) > 0;
