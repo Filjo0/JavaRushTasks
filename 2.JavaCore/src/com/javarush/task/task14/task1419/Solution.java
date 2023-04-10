@@ -11,7 +11,7 @@ import java.util.List;
 */
 
 public class Solution {
-    public static List<Exception> exceptions = new ArrayList<Exception>();
+    public static List<Exception> exceptions = new ArrayList<>();
 
     public static void main(String[] args) {
         initExceptions();
@@ -27,10 +27,8 @@ public class Solution {
             int b = 0;
             int c = a / b;
 
-        } catch (NullPointerException e) {
+        } catch (NullPointerException | ArithmeticException e) {
             exceptions.add(e);
-        } catch (ArithmeticException ex) {
-            exceptions.add(ex);
         }
 
         try {
@@ -38,18 +36,11 @@ public class Solution {
             short b = Short.parseShort(null);
             int c = a / b;
 
-        } catch (ArithmeticException ex) {
-            exceptions.add(ex);
-        } catch (NullPointerException e) {
-            exceptions.add(e);
-        } catch (NumberFormatException ex) {
+        } catch (ArithmeticException | NumberFormatException | NullPointerException ex) {
             exceptions.add(ex);
         }
         try {
             Object obj = new Object();
-            if (obj == null) {
-                throw new IllegalArgumentException("obj не может быть равно null");
-            }
         } catch (IllegalArgumentException e) {
             exceptions.add(e);
         }
@@ -59,7 +50,7 @@ public class Solution {
                 FileNotFoundException ex) {
             exceptions.add(ex);
         } catch (
-                ClassNotFoundException ex) {
+                ClassNotFoundException ignored) {
         }
         try {
             method1();
@@ -67,7 +58,7 @@ public class Solution {
                 ClassNotFoundException ex) {
             exceptions.add(ex);
         } catch (
-                FileNotFoundException e) {
+                FileNotFoundException ignored) {
         }
 
         try {
@@ -76,8 +67,7 @@ public class Solution {
                 RuntimeException e) {
             exceptions.add(e);
         } catch (
-                FileNotFoundException e) {
-        } catch (ClassNotFoundException e) {
+                FileNotFoundException | ClassNotFoundException ignored) {
         }
 
         try {
@@ -93,14 +83,14 @@ public class Solution {
             exceptions.add(e);
         }
         try {
-            Object x[] = new String[3];
-            x[0] = new Integer(0);
+            Object[] x = new String[3];
+            x[0] = 0;
         } catch (ArrayStoreException e) {
             exceptions.add(e);
         }
         try {
-            Object x = new Integer(0);
-            System.out.println((String) x);
+            Integer x = 0;
+            System.out.println(x);
         } catch (ClassCastException e) {
             exceptions.add(e);
         }
@@ -126,8 +116,6 @@ public class Solution {
             exceptions.add(e);
         }
     }
-
-    //напишите тут ваш код
 
     public static void method1() throws FileNotFoundException, ClassNotFoundException {
         FileInputStream fis = new FileInputStream("C2:\badFileName.txt");

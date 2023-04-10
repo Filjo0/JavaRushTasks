@@ -9,17 +9,14 @@ LinkedList и ArrayList
 
 public class Solution {
     public static Object createArrayList() {
-        ArrayList <String> arr = new ArrayList<>();
-        //напишите тут ваш код
+        ArrayList<String> arr = new ArrayList<>();
         return arr;
     }
 
     public static Object createLinkedList() {
 
-        LinkedList <String> list = new LinkedList<>();
+        LinkedList<String> list = new LinkedList<>();
         return list;
-        //напишите тут ваш код
-
     }
 
     public static void main(String[] args) {

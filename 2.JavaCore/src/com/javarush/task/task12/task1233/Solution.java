@@ -19,9 +19,8 @@ public class Solution {
             return new Pair<Integer, Integer>(null, null);
         }
 
-        //напишите тут ваш код
-        Integer min = Integer.MAX_VALUE;
-        Integer index = 0;
+        int min = Integer.MAX_VALUE;
+        int index = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];

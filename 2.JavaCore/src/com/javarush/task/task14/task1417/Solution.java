@@ -18,15 +18,13 @@ public class Solution {
 
     static class Person {
         public String name;
+        private List<Money> allMoney;
 
         Person(String name) {
             this.name = name;
             this.allMoney = new ArrayList<Money>();
-            allMoney.addAll(Arrays.asList(new Hrivna(3.00),new Ruble(25.00),new USD(9.00)));
-            //напишите тут ваш код
+            allMoney.addAll(Arrays.asList(new Hrivna(3.00), new Ruble(25.00), new USD(9.00)));
         }
-
-        private List<Money> allMoney;
 
         public List<Money> getAllMoney() {
             return allMoney;

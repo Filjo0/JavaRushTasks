@@ -1,11 +1,12 @@
 package com.javarush.task.task08.task0816;
 
-import com.sun.org.apache.xerces.internal.xni.Augmentations;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
 /* 
 Добрая Зинаида и летние каникулы
@@ -31,7 +32,6 @@ public class Solution {
     }
 
     public static void removeAllSummerPeople(Map<String, Date> map) {
-        //напишите тут ваш код
         map.values().removeIf(s -> s.getMonth() >= 5 && s.getMonth() <= 7);
 
     }

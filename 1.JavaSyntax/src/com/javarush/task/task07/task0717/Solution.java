@@ -1,6 +1,5 @@
 package com.javarush.task.task07.task0717;
 
-import javax.lang.model.type.ArrayType;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -22,7 +21,7 @@ public class Solution {
 
         ArrayList<String> result = doubleValues(list);
         for (String s : result) {
-                System.out.println(s);
+            System.out.println(s);
         }
     }
 
@@ -33,8 +32,6 @@ public class Solution {
             i = i + 2;
         }
 
-        //напишите тут ваш код
         return list;
-
     }
 }

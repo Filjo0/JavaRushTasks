@@ -18,14 +18,14 @@ public class Solution {
         }
 
         int[] numbers1 = new int[10];
-        System.arraycopy(elements,0,numbers1,0,10);
+        System.arraycopy(elements, 0, numbers1, 0, 10);
         for (int i = 0; i < numbers1.length; i++) {
         }
 
         int[] numbers2 = new int[10];
-        System.arraycopy(elements,10 , numbers2,0,10);
-        for (int i = 0; i < numbers2.length; i++) {
-            System.out.println(numbers2[i]);
+        System.arraycopy(elements, 10, numbers2, 0, 10);
+        for (int j : numbers2) {
+            System.out.println(j);
         }
-    }//напишите тут ваш код
+    }
 }

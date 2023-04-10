@@ -19,19 +19,17 @@ public class Solution {
         }
 
         int maximum = numbers[0];
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] > maximum)
-                maximum = numbers[i];
+        for (int number : numbers) {
+            if (number > maximum)
+                maximum = number;
         }
 
 
         int minimum = numbers[0];
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] < minimum)
-                minimum = numbers[i];
+        for (int number : numbers) {
+            if (number < minimum)
+                minimum = number;
         }
-
-        //напишите тут ваш код
 
         System.out.print(maximum + " " + minimum);
     }

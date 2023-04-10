@@ -22,7 +22,6 @@ public class Solution {
         for (Map.Entry<String, Integer> pair : copy.entrySet()) {
             if (pair.getValue() < 500) {
                 map.remove(pair.getKey());
-                //напишите тут ваш код
             }
         }
     }

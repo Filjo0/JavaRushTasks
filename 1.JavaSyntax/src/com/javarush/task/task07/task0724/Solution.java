@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Solution {
     public static void main(String[] args) {
-        ArrayList <Human> list = new ArrayList<>();
+        ArrayList<Human> list = new ArrayList<>();
 
         Human a = new Human("а", true, 1);
         Human b = new Human("б", false, 1);
@@ -30,8 +30,8 @@ public class Solution {
         list.add(h);
         list.add(i);
 
-        for (int n = 0; n < list.size(); n++) {
-            System.out.println(list.get(n));
+        for (Human human : list) {
+            System.out.println(human);
         }
         //5. Создай 9 разных объектов типа Human (4 объекта без отца и матери и 5 объектов с ними)).
         //6. Выведи созданные объекты на экран.    // напишите тут ваш код

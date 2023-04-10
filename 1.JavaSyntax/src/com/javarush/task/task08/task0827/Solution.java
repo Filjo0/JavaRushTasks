@@ -1,8 +1,6 @@
 package com.javarush.task.task08.task0827;
 
-import java.util.Date;
-
-/* 
+/*
 Работа с датой
 */
 

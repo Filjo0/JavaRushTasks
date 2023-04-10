@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
 
 /* 
 Меняем функциональность
@@ -23,19 +22,18 @@ public class Solution {
 
         ArrayList<String> list23 = new ArrayList<String>();
 
-        for (int i = 0; i < list.size(); i++) {
+        for (String s : list) {
 
-            if (list.get(i).length() % 2 == 0) {
-                list23.add(list.get(i) + " " + list.get(i));
+            if (s.length() % 2 == 0) {
+                list23.add(s + " " + s);
 
             } else {
-                list23.add(list.get(i) + " " + list.get(i) + " " + list.get(i));
+                list23.add(s + " " + s + " " + s);
             }
         }
 
-
-        for (int i = 0; i < list23.size(); i++) {
-            System.out.println(list23.get(i));
+        for (String s : list23) {
+            System.out.println(s);
         }
     }
 }

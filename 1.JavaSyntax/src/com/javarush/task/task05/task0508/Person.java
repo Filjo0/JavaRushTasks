@@ -9,8 +9,12 @@ public class Person {
     int age;
     char sex;
 
+    public static void main(String[] args) {
+
+    }
+
     public String getName() {
-        return name;//напишите тут ваш код
+        return name;
     }
 
     public void setName(String name) {
@@ -18,22 +22,18 @@ public class Person {
     }
 
     public int getAge() {
-        return age;//напишите тут ваш код
+        return age;
     }
 
-    public void setAge(int age){
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public char getSex(){
+    public char getSex() {
         return sex;
     }
-    public void setSex(char sex){
+
+    public void setSex(char sex) {
         this.sex = sex;
-    }
-    //напишите тут ваш код
-
-    public static void main(String[] args) {
-
     }
 }

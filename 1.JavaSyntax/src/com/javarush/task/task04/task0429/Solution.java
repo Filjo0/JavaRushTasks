@@ -4,8 +4,10 @@ package com.javarush.task.task04.task0429;
 Положительные и отрицательные числа
 */
 
-import java.io.*;
-import java.sql.SQLOutput;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -19,13 +21,13 @@ public class Solution {
 
         int a = Integer.parseInt(p);
         int b = Integer.parseInt(q);
-        int c = Integer.parseInt(r);//напишите тут ваш код
+        int c = Integer.parseInt(r);
         int d = 0;
         int e = 0;
         if (a > 0) {
             d++;
         }
-        if (a < 0){
+        if (a < 0) {
             e++;
         }
         if (b > 0) {
@@ -34,11 +36,11 @@ public class Solution {
         if (b < 0) {
             e++;
         }
-        if (c > 0){
+        if (c > 0) {
             d++;
         }
         if (c < 0) {
-            e++;//напишите тут ваш код
+            e++;
         }
         System.out.println("количество отрицательных чисел: " + e);
         System.out.println("количество положительных чисел: " + d);

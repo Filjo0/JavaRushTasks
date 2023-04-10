@@ -26,7 +26,6 @@ public class Solution {
     }
 
     public static void insert10000(List list) {
-        //напишите тут ваш код
         for (int i = 0; i < 10000; i++) {
             list.add(i);
         }
@@ -38,8 +37,6 @@ public class Solution {
         for (int i = 0; i < 10000; i++) {
             list.get(i);
         }
-        //напишите тут ваш код
-
     }
 
     public static void set10000(List list) {
@@ -47,16 +44,10 @@ public class Solution {
         for (int i = 0; i < 10000; i++) {
             list.set(1, i);
         }
-        //напишите тут ваш код
-
     }
 
     public static void remove10000(List list) {
 
-        for (int i = 0; i < 10000; i++) {
-            list.remove(0);
-        }
-        //напишите тут ваш код
-
+        list.subList(0, 10000).clear();
     }
 }

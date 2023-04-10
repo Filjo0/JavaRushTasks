@@ -21,7 +21,7 @@ public class Solution {
     interface Secretary extends Person {
     }
 
-    interface Boss extends Person, Workable{
+    interface Boss extends Person, Workable {
     }
 
     class CleverMan implements Boss {

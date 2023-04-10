@@ -1,6 +1,5 @@
 package com.javarush.task.task07.task0707;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /* 
@@ -16,9 +15,8 @@ public class Solution {
         list.add("1");
         list.add("1");
         System.out.println(list.size());
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-            //напишите тут ваш код
+        for (String s : list) {
+            System.out.println(s);
         }
     }
 }

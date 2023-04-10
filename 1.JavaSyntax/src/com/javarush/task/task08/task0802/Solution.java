@@ -4,17 +4,12 @@ package com.javarush.task.task08.task0802;
 Map из 10 пар
 */
 
-import sun.awt.SunHints;
-
-import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
         Map<String, String> map = new HashMap<String, String>();
         map.put("арбуз", "ягода");
         map.put("банан", "трава");
@@ -28,8 +23,7 @@ public class Solution {
         map.put("картофель", "клубень");
 
 
-        for(Map.Entry<String, String> pair : map.entrySet())
-        {
+        for (Map.Entry<String, String> pair : map.entrySet()) {
             String key = pair.getKey();
             String value = pair.getValue();
             System.out.println(key + " - " + value);
@@ -56,7 +50,5 @@ public class Solution {
         hashMap.put("Рыжик", value + 3);
         int i = hashMap.get("Рыжик");
         System.out.println("У Рыжика стало " + hashMap.get("Рыжик"));
-
-
     }
 }

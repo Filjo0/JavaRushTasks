@@ -9,6 +9,10 @@ public class Dog {
     private int height = 5;
     private String color = "Black";
 
+    public static void main(String[] args) {
+
+    }
+
     public void initialize(String name) {
 
         this.name = name;
@@ -23,9 +27,5 @@ public class Dog {
         this.name = name;
         this.height = height;
         this.color = color;
-    }
-
-    public static void main(String[] args) {
-
     }
 }

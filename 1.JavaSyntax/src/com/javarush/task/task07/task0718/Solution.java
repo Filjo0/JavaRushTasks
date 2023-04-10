@@ -23,11 +23,8 @@ public class Solution {
             if (list.get(i - 1).length() > list.get(i).length()) {
                 System.out.println(list.indexOf(list.get(i)));
                 break;
+            } else if (list.get(i - 1).length() < list.get(i).length()) {
             }
-            else if (list.get(i - 1).length() < list.get(i).length()) {
-            }
-
-            //напишите тут ваш код
         }
     }
 }

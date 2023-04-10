@@ -25,7 +25,7 @@ public class Solution {
         }
         if (o instanceof Bull) {
             return "Бык";
-        }//напишите тут ваш код
+        }
         else {
             return "Животное";
         }

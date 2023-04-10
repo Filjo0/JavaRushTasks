@@ -22,25 +22,21 @@ public class Solution {
         System.out.println(dog2);
     }
 
-        //напишите тут ваш код
-
     public static class Duck {
         public String toString() {
             return "Duck";
         }
     }
 
-        public static class Cat {
-            public String toString() {
-                return "Cat";
-            }
+    public static class Cat {
+        public String toString() {
+            return "Cat";
         }
+    }
 
-            public static class Dog {
-                public String toString() {
-                    return "Dog";
-
-                    //напишите тут ваш код
-                }
-            }
+    public static class Dog {
+        public String toString() {
+            return "Dog";
         }
+    }
+}

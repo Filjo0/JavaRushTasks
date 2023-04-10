@@ -9,8 +9,7 @@ import java.util.Date;
 
 public class Solution {
     public static void main(String[] args) {
-            SimpleDateFormat dateFormat = new SimpleDateFormat("dd MM yyyy");
-            System.out.print(dateFormat.format((new Date())));
-            //напишите тут ваш код
-        }
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd MM yyyy");
+        System.out.print(dateFormat.format((new Date())));
     }
+}

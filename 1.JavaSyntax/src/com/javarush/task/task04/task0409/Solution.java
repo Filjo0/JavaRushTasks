@@ -14,15 +14,13 @@ public class Solution {
         int c = 10 - a;
         c = abs(c);
         int d = 10 - b;
-        d =abs(d);
-        if (c<d){
+        d = abs(d);
+        if (c < d) {
             System.out.println(a);
-        }
-        else {
+        } else {
             System.out.println(b);
         }
-        }
-
+    }
 
 
     public static int abs(int a) {

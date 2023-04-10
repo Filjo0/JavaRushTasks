@@ -27,8 +27,6 @@ public class Solution {
     public static void printValues(Map<String, String> map) {
         for (Map.Entry<String, String> pair : map.entrySet()) {
             System.out.println(pair.getValue());
-
-            //напишите тут ваш код
         }
     }
 }

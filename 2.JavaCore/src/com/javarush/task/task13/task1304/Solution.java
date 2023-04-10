@@ -15,7 +15,8 @@ public class Solution {
     interface Updatable {
         void refresh();
     }
-    public class Screen implements Selectable, Updatable {
+
+    public static class Screen implements Selectable, Updatable {
 
         @Override
         public void onSelect() {

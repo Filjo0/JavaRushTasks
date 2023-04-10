@@ -48,7 +48,6 @@ public class Solution {
             } else if ("cartoon".equals(key)) {
                 movie = new Cartoon();
             }
-            //напишите тут ваш код, пункты 5,6
 
             return movie;
         }
@@ -67,5 +66,4 @@ public class Solution {
     static class Thriller extends Movie {
 
     }
-//Напишите тут ваши классы, пункт 3
 }

@@ -26,11 +26,10 @@ public class Solution {
             }
 
         } catch (Exception e) {
-            for (int i = 0; i < list.size(); i++) {
-                System.out.println(list.get(i));
+            for (Integer integer : list) {
+                System.out.println(integer);
 
             }
         }
     }
 }
-//напишите тут ваш код

@@ -18,11 +18,9 @@ public class Solution {
         }
     }
 
-
     public static Map<String, Cat> addCatsToMap(String[] cats) {
-        //напишите тут ваш код
         Map<String, Cat> addCats = new HashMap<String, Cat>();
-        for(String s: cats){
+        for (String s : cats) {
             addCats.put(s, new Cat(s));
         }
         return addCats;

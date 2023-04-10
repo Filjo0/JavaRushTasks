@@ -4,8 +4,6 @@ package com.javarush.task.task12.task1228;
 Интерфейсы к классу Human
 */
 
-import java.util.concurrent.ScheduledExecutorService;
-
 public class Solution {
     public static void main(String[] args) {
         Human human = new Human();

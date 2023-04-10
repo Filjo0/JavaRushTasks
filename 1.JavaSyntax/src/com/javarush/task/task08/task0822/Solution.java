@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 
 /* 
@@ -27,7 +26,7 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         List<Integer> list = new ArrayList<>();
         int size = Integer.parseInt(reader.readLine());
-        for (int i = 0; i < size; i ++){
+        for (int i = 0; i < size; i++) {
             int num = Integer.parseInt(reader.readLine());
             list.add(num);
         }

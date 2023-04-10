@@ -14,9 +14,8 @@ public class Solution {
         for (int i = 0; i < (array.length - 2); i++) {
             array[i] = reader.readLine();
         }
-        for (int i = 9; i >= 0 ; i--) {
+        for (int i = 9; i >= 0; i--) {
             System.out.println(array[i]);
         }
-        //напишите тут ваш код
     }
 }

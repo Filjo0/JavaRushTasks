@@ -22,16 +22,16 @@ public class Solution {
             list.add(Integer.parseInt(reader.readLine()));
         }
 
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) % 3 == 0) {
-                d3.add(list.get(i));
-                if (list.get(i) % 2 == 0) {
-                    d2.add(list.get(i));
+        for (Integer integer : list) {
+            if (integer % 3 == 0) {
+                d3.add(integer);
+                if (integer % 2 == 0) {
+                    d2.add(integer);
                 }
-            } else if (list.get(i) % 2 == 0) {
-                d2.add(list.get(i));
+            } else if (integer % 2 == 0) {
+                d2.add(integer);
             } else
-                another.add(list.get(i));
+                another.add(integer);
         }
 
         printList(list);
@@ -41,14 +41,11 @@ public class Solution {
         printList(d2);
         System.out.println();
         printList(another);
-        //напишите тут ваш код
     }
 
     public static void printList(List<Integer> list) {
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+        for (Integer integer : list) {
+            System.out.println(integer);
         }
-
-        //напишите тут ваш код
     }
 }

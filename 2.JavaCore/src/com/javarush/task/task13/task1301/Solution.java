@@ -21,7 +21,7 @@ public class Solution {
         void sleepOnTheFloor();
     }
 
-    public static class BeerLover implements Alcoholic{
+    public static class BeerLover implements Alcoholic {
 
         @Override
         public void askForMore(String message) {

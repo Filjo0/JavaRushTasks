@@ -13,12 +13,10 @@ public class Solution {
 
     public static void compare(int a) {
         if (a < 5) {
-            System.out.println("Число меньше 5");   //напишите тут ваш код
-        }
-        else if (a > 5) {
+            System.out.println("Число меньше 5");
+        } else if (a > 5) {
             System.out.println("Число больше 5");
-        }
-            else {
+        } else {
             System.out.println("Число равно 5");
         }
     }

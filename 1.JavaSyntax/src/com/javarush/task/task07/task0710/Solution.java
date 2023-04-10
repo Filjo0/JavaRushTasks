@@ -11,8 +11,6 @@ import java.util.ArrayList;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
         Reader r = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(r);
 
@@ -24,8 +22,8 @@ public class Solution {
         }
 
 //вывод содержимого коллекции на экран
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+        for (String s : list) {
+            System.out.println(s);
         }
     }
 }

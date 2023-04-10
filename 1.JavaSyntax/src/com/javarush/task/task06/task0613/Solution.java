@@ -21,7 +21,7 @@ public class Solution {
     }
 
     public static class Cat {
-       public static int catCount;    // Создай статическую переменную catCount
+        public static int catCount;    // Создай статическую переменную catCount
 
         public Cat() {
             Cat.catCount++;

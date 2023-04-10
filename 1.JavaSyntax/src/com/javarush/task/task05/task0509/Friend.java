@@ -10,6 +10,10 @@ public class Friend {
     private int age;
     private char sex;
 
+    public static void main(String[] args) {
+
+    }
+
     public void initialize(String name) {
         this.name = name;
     }
@@ -24,7 +28,4 @@ public class Friend {
         this.age = age;
         this.sex = sex;
     }
-        public static void main(String[] args) {
-
-        }
-    }
+}

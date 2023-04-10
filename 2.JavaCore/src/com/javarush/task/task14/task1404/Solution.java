@@ -16,8 +16,6 @@ public class Solution {
             System.out.println(cat.toString());
         }
         br.close();
-
-        //напишите тут ваш код
     }
 
     static class CatFactory {
@@ -36,7 +34,7 @@ public class Solution {
         }
     }
 
-    static class Cat{
+    static class Cat {
         private String name;
 
         protected Cat(String name) {

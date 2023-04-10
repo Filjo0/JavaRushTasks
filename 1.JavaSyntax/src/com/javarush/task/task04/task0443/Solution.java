@@ -5,7 +5,10 @@ package com.javarush.task.task04.task0443;
 Как назвали, так назвали
 */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -23,9 +26,7 @@ public class Solution {
         int d = Integer.parseInt(p);
 
 
-
         System.out.println("Меня зовут " + name + ".");
-        System.out.println("Я родился " + d + "." + m + "." + y);//напишите тут ваш код
+        System.out.println("Я родился " + d + "." + m + "." + y);
     }
 }
-//напишите тут ваш код

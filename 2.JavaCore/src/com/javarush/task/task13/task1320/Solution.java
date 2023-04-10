@@ -9,15 +9,15 @@ public class Solution {
         System.out.println(Matrix.NEO);
     }
 
-    static class Matrix {
-        public static DBObject NEO = new User().initializeIdAndName(1, "Neo");
-    }
-
     interface DBObject {
         DBObject initializeIdAndName(long id, String name);
     }
 
-    static class User implements DBObject{
+    static class Matrix {
+        public static DBObject NEO = new User().initializeIdAndName(1, "Neo");
+    }
+
+    static class User implements DBObject {
         long id;
         String name;
 

@@ -24,12 +24,11 @@ public class Solution {
     }
 
     public static void haveFun(Person person) {
-      if (person instanceof Player) {
-          ((Player) person).play();//напишите тут ваш код
-      }
-      else if (person instanceof Dancer) {
-          ((Dancer) person).dance();
-      }
+        if (person instanceof Player) {
+            ((Player) person).play();
+        } else if (person instanceof Dancer) {
+            ((Dancer) person).dance();
+        }
     }
 
     interface Person {

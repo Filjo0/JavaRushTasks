@@ -25,14 +25,11 @@ public class Solution {
     public static void sort(int[] array) {
         for (int n = 0; n < array.length - 1; n++) {
             for (int k = 0; k < array.length - 1 - n; k++)
-            if (array[k] < array[k + 1]) {
-                int tmp = array[k];
-                array[k] = array[k + 1];
-                array[k + 1] = tmp;
-            }
-
-
+                if (array[k] < array[k + 1]) {
+                    int tmp = array[k];
+                    array[k] = array[k + 1];
+                    array[k + 1] = tmp;
+                }
         }
     }
-    //напишите тут ваш код
 }

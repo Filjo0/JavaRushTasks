@@ -14,30 +14,23 @@ public class ConsoleReader {
         InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-        String s = bufferedReader.readLine();
-        return s;
-        //напишите тут ваш код
-
+        return bufferedReader.readLine();
     }
 
     public static int readInt() throws Exception {
-        //напишите тут ваш код
         InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         String p = bufferedReader.readLine();
-        int number = Integer.parseInt(p);
-        return number;
+        return Integer.parseInt(p);
     }
 
     public static double readDouble() throws Exception {
-        //напишите тут ваш код
         InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         String q = bufferedReader.readLine();
-        double num = Double.parseDouble(q);
-        return num;
+        return Double.parseDouble(q);
 
     }
 
@@ -46,8 +39,7 @@ public class ConsoleReader {
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         String u = bufferedReader.readLine();
-        boolean a = Boolean.parseBoolean(u);
-        return a;    //напишите тут ваш код
+        return Boolean.parseBoolean(u);
 
 
     }

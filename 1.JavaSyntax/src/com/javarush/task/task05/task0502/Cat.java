@@ -12,11 +12,11 @@ public class Cat {
     public Cat() {
     }
 
-    public boolean fight(Cat anotherCat) {
-        return this.age + this.weight + this.strength > anotherCat.age + this.weight + this.strength;
-    }
-
     public static void main(String[] args) {
 
+    }
+
+    public boolean fight(Cat anotherCat) {
+        return this.age + this.weight + this.strength > anotherCat.age + this.weight + this.strength;
     }
 }

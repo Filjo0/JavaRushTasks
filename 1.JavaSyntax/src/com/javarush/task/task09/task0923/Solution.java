@@ -39,8 +39,6 @@ public class Solution {
         }
     }
 
-    //напишите тут ваш код
-
     // метод проверяет, гласная ли буква
     public static boolean isVowel(char c) {
         c = Character.toLowerCase(c);  // приводим символ в нижний регистр - от заглавных к строчным буквам

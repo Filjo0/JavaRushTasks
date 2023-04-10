@@ -4,7 +4,10 @@ package com.javarush.task.task05.task0507;
 Среднее арифметическое
 */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -19,16 +22,12 @@ public class Solution {
             int number = Integer.parseInt(p);
             if (number == -1) {
                 break;
-            }
-
-            else {
-                    sum = number + sum;
+            } else {
+                sum = number + sum;
                 count++;
             }
 
         }
-        System.out.println(sum/count);    //напишите тут ваш код
+        System.out.println(sum / count);
     }
 }
-//напишите тут ваш код
-
