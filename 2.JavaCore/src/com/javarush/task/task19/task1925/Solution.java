@@ -8,21 +8,21 @@ import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter;
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(args[0]))) {
-            bufferedWriter = new BufferedWriter(new FileWriter(args[1]));
-
-            StringBuilder sb = new StringBuilder();
-            while (bufferedReader.ready()) {
-                String[] line = bufferedReader.readLine().split(" ");
-                for (String s : line) {
-                    if (s.length() > 6) {
-                        sb.append(s).append(",");
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(args[0])); BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(args[1]))) {
+            String line;
+            boolean first = true;
+            while ((line = bufferedReader.readLine()) != null) {
+                String[] words = line.split(" ");
+                for (String word : words) {
+                    if (word.length() > 6) {
+                        if (!first) {
+                            bufferedWriter.write(",");
+                        }
+                        bufferedWriter.write(word);
+                        first = false;
                     }
                 }
             }
-            bufferedWriter.write(sb.delete(sb.length() - 1, sb.length()).toString());
         }
-        bufferedWriter.close();
     }
 }

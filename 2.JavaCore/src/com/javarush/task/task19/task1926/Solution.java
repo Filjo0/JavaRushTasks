@@ -13,16 +13,14 @@ public class Solution {
     public static void main(String[] args) throws IOException {
 
 
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
-        BufferedReader fileReader = new BufferedReader(new FileReader(bufferedReader.readLine()));
-        bufferedReader.close();
-
-
-        while (fileReader.ready()) {
-            StringBuilder stringBuilder = new StringBuilder(fileReader.readLine()).reverse();
-            System.out.println(stringBuilder.toString());
+        try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in))) {
+            String fileName = consoleReader.readLine();
+            try (BufferedReader fileReader = new BufferedReader(new FileReader(fileName))) {
+                String line;
+                while ((line = fileReader.readLine()) != null) {
+                    System.out.println(new StringBuilder(line).reverse());
+                }
+            }
         }
-        fileReader.close();
     }
 }

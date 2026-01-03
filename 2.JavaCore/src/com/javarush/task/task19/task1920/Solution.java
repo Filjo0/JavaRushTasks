@@ -11,14 +11,15 @@ import java.util.TreeMap;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(args[0]));
         TreeMap<String, Double> m = new TreeMap<>();
 
-        while (reader.ready()) {
-            String[] s = reader.readLine().split(" ");
-            if (m.containsKey(s[0])) {
-                m.put(s[0], m.get(s[0]) + Double.parseDouble(s[1]));
-            } else m.put(s[0], Double.parseDouble(s[1]));
+        try (BufferedReader reader = new BufferedReader(new FileReader(args[0]))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] s = line.split(" ");
+                double value = Double.parseDouble(s[1]);
+                m.merge(s[0], value, Double::sum);
+            }
         }
 
         double maxValue = m.values()
@@ -32,6 +33,5 @@ public class Solution {
                 System.out.println(key);
             }
         });
-        reader.close();
     }
 }

@@ -13,14 +13,19 @@ public class Solution {
         System.out.println("This is the Solution class");
     }
 
-    public static void main(String... args) throws IOException {
+    public static void main(com.javarush.task.task20.task2010.Solution.String... args) throws IOException {
         try (
-                FileOutputStream outputStream = new FileOutputStream(args[0]);
-                InputStream is = Solution.class.getClassLoader().getResourceAsStream(args[1]);
+                FileOutputStream outputStream = new FileOutputStream(args[0].toString());
+                InputStream is = Solution.class.getClassLoader().getResourceAsStream(args[1].toString());
         ) {
-            ;
-            byte[] b = new byte[is.available()];
-            outputStream.write(is.read(b));
+            if (is == null) {
+                throw new IOException("Resource not found: " + args[1]);
+            }
+            byte[] buffer = new byte[8192];
+            int read;
+            while ((read = is.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, read);
+            }
 
             int value = 123_456_789;
             System.out.println(value);
@@ -47,7 +52,6 @@ public class Solution {
                 System.out.println(p.getClass().getSimpleName());
             }
 
-        } catch (IOException e) {
         }
     }
 
